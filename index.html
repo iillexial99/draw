@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<title>РИСОВАЧ 2.0</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/styles.css"> 
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="jscolor/jscolor.js"></script>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/draw.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="container">
+	<!---Drawing area-->
+	<canvas width="1000" height="400" id="canvas">Ваш бразуер не поддерживает canvas, значит, canvas не поддерживает ваш браузер</canvas>
+
+	<!---Tools-->
+	<div id="tools"></div>
+	<button type="button" style="margin:3px" onclick="alert('Функция временно недоступна')" class="btn btn-success">Сохранить</button>
+<br><input class="color" style="border:1px solid #ccc;border-radius:4px;width:50px;padding:2px;" onchange='ctx.strokeStyle = "#"+this.color; ctx.fillStyle = "#"+this.color ;' value="#000"><!--Цвет-->
+	<!---Tools-->
+
+	<!---Drawing area-->
+
+</div>
+
+
+</body>
+</html>
